@@ -11,10 +11,10 @@
         android:id="@+id/linearLayout"
         android:layout_width="406dp"
         android:layout_height="60dp"
-        android:background="#B0BF6416"
+        android:background="#B0CA5F03"
         android:orientation="horizontal"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -68,69 +68,15 @@
         android:id="@+id/imageView"
         android:layout_width="415dp"
         android:layout_height="130dp"
-        android:layout_marginTop="-10dp"
+        android:layout_marginTop="-20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/homeicon" />
 
-    <Button
-        android:id="@+id/queens_game"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableTop="@drawable/__queens__1_"
-        android:text="8 Queens"
-        app:layout_constraintEnd_toStartOf="@+id/tic_tac_toe"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <Button
-        android:id="@+id/tic_tac_toe"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableTop="@drawable/tic_tac_toie"
-        android:text="8 Queens"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/queens_game"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <Button
-        android:id="@+id/short_path"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableTop="@drawable/shortast"
-        android:text="8 Queens"
-        app:layout_constraintBottom_toTopOf="@+id/last_game"
-        app:layout_constraintEnd_toStartOf="@+id/sort"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/queens_game" />
 
-    <Button
-        android:id="@+id/sort"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableTop="@drawable/sort"
-        android:text="8 Queens"
-        app:layout_constraintBottom_toTopOf="@+id/last_game"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/short_path"
-        app:layout_constraintTop_toBottomOf="@+id/tic_tac_toe" />
-
-    <Button
-        android:id="@+id/last_game"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="30dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableTop="@drawable/__queens__1_"
-        android:text="8 Queens"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

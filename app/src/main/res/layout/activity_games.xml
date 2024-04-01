@@ -11,11 +11,257 @@
         android:id="@+id/imageView"
         android:layout_width="415dp"
         android:layout_height="130dp"
-        android:layout_marginTop="-10dp"
+        android:layout_marginTop="-30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/homeicon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:background="#29BBCF"
+                android:backgroundTint="#29BBCF"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/oig2_ocfl0"
+                    tools:layout_editor_absoluteX="7dp"
+                    tools:layout_editor_absoluteY="116dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="30dp"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="112dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="8 Queens Game"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView TextView"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/btn_play_queens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="Play Now"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F27400"
+                android:orientation="horizontal"
+                android:textAlignment="textEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="30dp"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="112dp">
+
+                    <TextView
+                        android:id="@+id/txt_game2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tic Tac Toe Game"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt_d_game2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView TextView"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/btn_play_tic_tac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="Play Now"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_game2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/oig4"
+                    tools:layout_editor_absoluteX="7dp"
+                    tools:layout_editor_absoluteY="116dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FBFBD9"
+                android:orientation="horizontal"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                tools:layout_editor_absoluteX="-2dp">
+
+                <ImageView
+                    android:id="@+id/img_game3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/oig3__1_"
+                    tools:layout_editor_absoluteX="7dp"
+                    tools:layout_editor_absoluteY="116dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="30dp"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="112dp">
+
+                    <TextView
+                        android:id="@+id/txt_game3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Shortest Path "
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt_d_game3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView TextView"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/btn_play_shortPath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="Play Now"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3796BE"
+                android:orientation="horizontal"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                tools:layout_editor_absoluteX="-2dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="30dp"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="112dp">
+
+                    <TextView
+                        android:id="@+id/txt_game4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sort Random Nums "
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt_d_game4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView TextView"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/btn_play_sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="Play Now"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_game4"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/oig1"
+                    tools:layout_editor_absoluteX="7dp"
+                    tools:layout_editor_absoluteY="116dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -73,5 +319,6 @@
             android:drawableTop="@drawable/notifications"
             android:text="" />
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

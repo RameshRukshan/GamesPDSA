@@ -10,6 +10,19 @@ class Games : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_games)
 
+        //Navigate through games
+
+        var btn_queens : Button = findViewById(R.id.btn_play_queens)
+        var btn_tic : Button = findViewById(R.id.btn_play_tic_tac)
+        var btn_path : Button = findViewById(R.id.btn_play_shortPath)
+        var btn_sort : Button = findViewById(R.id.btn_play_sort)
+
+        btn_queens.setOnClickListener(){
+            var go_queens = Intent(this, GameQueens::class.java)
+            startActivity(go_queens)
+        }
+        
+
         //  BOTTOM BUTTON NAVIGATION
 
         var btn_home : Button = findViewById(R.id.btn_home)
