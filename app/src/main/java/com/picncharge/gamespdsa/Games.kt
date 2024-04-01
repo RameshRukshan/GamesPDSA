@@ -21,7 +21,22 @@ class Games : AppCompatActivity() {
             var go_queens = Intent(this, GameQueens::class.java)
             startActivity(go_queens)
         }
-        
+
+        btn_tic.setOnClickListener(){
+            var go_tic = Intent(this, GameTicTacToe::class.java)
+            startActivity(go_tic)
+        }
+
+        btn_path.setOnClickListener(){
+            var go_path = Intent(this, GameShortastPath::class.java)
+            startActivity(go_path)
+        }
+
+        btn_sort.setOnClickListener(){
+            var go_sort = Intent(this, GameSort::class.java)
+            startActivity(go_sort)
+        }
+
 
         //  BOTTOM BUTTON NAVIGATION
 
